@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Bot, User, Loader2 } from 'lucide-react';
 import './App.css';
 
-const URL_API = 'http://localhost:8001/api/chat/message/';
+const URL_API = process.env.REACT_APP_API_URL || 'http://localhost:8001/api/chat/message/';
 
 function App() {
   const [messages, setMessages] = useState([

@@ -5,7 +5,7 @@ import google.generativeai as genai
 import os
 
 # Configuration de l'API Gemini
-CLE_API = "AIzaSyA2CqLlDxl82X2xsfOGlqQrGL53iNxm5pQ"
+CLE_API = os.environ.get("CLE_API", "AIzaSyA2CqLlDxl82X2xsfOGlqQrGL53iNxm5pQ")
 genai.configure(api_key=CLE_API)
 
 INSTRUCTION_SYSTEME = """
