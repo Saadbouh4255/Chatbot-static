@@ -5,7 +5,7 @@ import { Send, Bot, User, Loader2, Sun, Moon } from 'lucide-react';
 import logo from './assets/pixel_craft_logo.png';
 import './App.css';
 
-const URL_API = process.env.REACT_APP_API_URL || 'https://coulouche-bot-backend.onrender.com/api/chat/message/';
+const URL_API = 'https://coulouche-bot-backend.onrender.com/api/chat/message/';
 
 function App() {
   const [messages, setMessages] = useState([

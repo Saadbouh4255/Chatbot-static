@@ -112,7 +112,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Paramètres CORS
-CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all in debug mode
+CORS_ALLOW_ALL_ORIGINS = True  # Only allow all in debug mode
 
-if not DEBUG:
-    CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', 'https://chatbot-wrwo.onrender.com').split(',')
+CORS_ALLOWED_ORIGINS =  ['*']
